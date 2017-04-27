@@ -136,4 +136,10 @@ public class CalcTest {
     int r = Calc.calc("15-1-16/20*29/29+11/5/28*11");
     Assert.assertEquals(15-1-16/20*29/29+11/5/28*11, r); // 14
   }
+
+  public void calcParens1() {
+    int r = Calc.calc("26*(16-21)+26/24/27*4*21/(30+2)");
+    Assert.assertEquals(26*(16-21)+26/24/27*4*21/(30+2), r); // 397
+  }
+
 }
