@@ -64,7 +64,25 @@ public class CalcTest {
     Assert.assertEquals(10-5*2+1-4/2, r);
   }
 
-  //Generated in python with: ''.join([str(random.randint(0,30)) + random.choice("-+*/") for i in range(10)])[:-1]
+  // Generated in python with the following code:
+
+  // import random
+  //
+  // template = """  @Test
+  //   public void calcRandom%s() {
+  //     int r = Calc.calc("%s");
+  //     Assert.assertEquals(%s, r); // %s
+  //   }
+  // """
+  //
+  // for i in range(10):
+  //     testString = ''.join([str(random.randint(0,30)) + random.choice("-+*/") for j in range(10)])[:-1]
+  //     try:
+  //        print template % (i, testString, testString, eval(testString))
+  //     except ZeroDivisionError:
+  //        print "// %s gives division by 0" % testString
+
+
   @Test
   public void calcRandom1() {
     int r = Calc.calc("29*11-2*27/10-16*28+3/2/8");
