@@ -63,4 +63,59 @@ public class CalcTest {
     int r = Calc.calc("10-5*2+1-4/2");
     Assert.assertEquals(10-5*2+1-4/2, r);
   }
+
+  //Generated in python with: ''.join([str(random.randint(0,30)) + random.choice("-+*/") for i in range(10)])[:-1]
+  @Test
+  public void calcRandom1() {
+    int r = Calc.calc("29*11-2*27/10-16*28+3/2/8");
+    Assert.assertEquals(29*11-2*27/10-16*28+3/2/8, r); // -134
+  }
+
+  @Test
+  public void calcRandom2() {
+    int r = Calc.calc("1*30+10+8+1*7-7*7+28/2");
+    Assert.assertEquals(1*30+10+8+1*7-7*7+28/2, r); // 20
+  }
+
+  @Test
+  public void calcRandom3() {
+    int r = Calc.calc("6/21*24+15/26+8*18+25+4+12");
+    Assert.assertEquals(6/21*24+15/26+8*18+25+4+12, r); // 185
+  }
+
+  @Test
+  public void calcRandom4() {
+    int r = Calc.calc("5*19*16-28*24*23-7+14-3*24");
+    Assert.assertEquals(5*19*16-28*24*23-7+14-3*24, r); // -14001
+  }
+
+  @Test
+  public void calcRandom5() {
+    int r = Calc.calc("26/14/29-29*4/7+20*29*14/18");
+    Assert.assertEquals(26/14/29-29*4/7+20*29*14/18, r); // 435
+  }
+
+  @Test
+  public void calcRandom6() {
+    int r = Calc.calc("26*16-21+26/24/27*4*21/30+2");
+    Assert.assertEquals(26*16-21+26/24/27*4*21/30+2, r); // 397
+  }
+
+  @Test
+  public void calcRandom7() {
+    int r = Calc.calc("23+26-5-27/8/24/10+9+23*14");
+    Assert.assertEquals(23+26-5-27/8/24/10+9+23*14, r); // 375
+  }
+
+  @Test
+  public void calcRandom8() {
+    int r = Calc.calc("1-7/22/26*24-25+11+22+19*14");
+    Assert.assertEquals(1-7/22/26*24-25+11+22+19*14, r); // 275
+  }
+
+  @Test
+  public void calcRandom9() {
+    int r = Calc.calc("15-1-16/20*29/29+11/5/28*11");
+    Assert.assertEquals(15-1-16/20*29/29+11/5/28*11, r); // 14
+  }
 }
