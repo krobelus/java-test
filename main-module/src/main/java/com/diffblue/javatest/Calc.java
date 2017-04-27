@@ -7,26 +7,27 @@ public class Calc {
 
   static int calc(String str)
   {
-    if (str.contains("-")) {
-      String[] arr = str.split("-", 1);
-      return calc(arr[0]) - calc(arr[1]);
+    int index;
+    index = str.indexOf("-");
+    if (index != -1) {
+      return calc(str.substring(0,index - 1)) - calc(str.substring(index + 1));
     }
 
-    if (str.contains("+")) {
-      String[] arr = str.split("+", 1);
-      return calc(arr[0]) + calc(arr[1]);
+    index = str.indexOf("+");
+    if (index != -1) {
+      return calc(str.substring(0,index - 1)) + calc(str.substring(index + 1));
     }
 
-    if (str.contains("*")) {
-      String[] arr = str.split("*", 1);
-      return calc(arr[0]) * calc(arr[1]);
+    index = str.indexOf("*");
+    if (index != -1) {
+      return calc(str.substring(0,index - 1)) * calc(str.substring(index + 1));
     }
 
-    if (str.contains("/")) {
-      String[] arr = str.split("/", 1);
-      return calc(arr[0]) / calc(arr[1]);
+    index = str.indexOf("/");
+    if (index != -1) {
+      return calc(str.substring(0,index - 1)) / calc(str.substring(index + 1));
     }
 
-    return new Integer(str);
+    return Integer.parseInt(str);
   }
 }
