@@ -130,7 +130,7 @@ public class TicTacToe {
       case ' ':
         return 0;
       default:
-        throw new Error("Character " + c + " not recognized");
+        throw new NumberFormatException();
     }
   }
 }
