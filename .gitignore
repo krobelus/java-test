@@ -1,2 +1,5 @@
 *.class
 /main-module/target/
+.project
+.classpath
+.settings
