@@ -9,22 +9,22 @@ public class Calc {
   {
     int index;
 
-    index = str.lastIndexOf("+");
+    index = str.lastIndexOf('+');
     if (index != -1) {
       return calc(str.substring(0,index)) + calc(str.substring(index + 1));
     }
 
-    index = str.lastIndexOf("-");
+    index = str.lastIndexOf('-');
     if (index != -1) {
       return calc(str.substring(0,index)) - calc(str.substring(index + 1));
     }
 
-    index = str.lastIndexOf("/");
+    index = str.lastIndexOf('/');
     if (index != -1) {
       return calc(str.substring(0,index)) / calc(str.substring(index + 1));
     }
 
-    index = str.lastIndexOf("*");
+    index = str.lastIndexOf('*');
     if (index != -1) {
       return calc(str.substring(0,index)) * calc(str.substring(index + 1));
     }
