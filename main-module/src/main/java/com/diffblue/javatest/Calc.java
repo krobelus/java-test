@@ -14,20 +14,20 @@ public class Calc {
       return calc(str.substring(0,index)) + calc(str.substring(index + 1));
     }
 
-    index = str.lastIndexOf('-');
-    if (index != -1) {
-      return calc(str.substring(0,index)) - calc(str.substring(index + 1));
-    }
+    // index = str.lastIndexOf('-');
+    // if (index != -1) {
+    //   return calc(str.substring(0,index)) - calc(str.substring(index + 1));
+    // }
 
-    index = str.lastIndexOf('/');
-    if (index != -1) {
-      return calc(str.substring(0,index)) / calc(str.substring(index + 1));
-    }
+    // index = str.lastIndexOf('/');
+    // if (index != -1) {
+    //   return calc(str.substring(0,index)) / calc(str.substring(index + 1));
+    // }
 
-    index = str.lastIndexOf('*');
-    if (index != -1) {
-      return calc(str.substring(0,index)) * calc(str.substring(index + 1));
-    }
+    // index = str.lastIndexOf('*');
+    // if (index != -1) {
+    //   return calc(str.substring(0,index)) * calc(str.substring(index + 1));
+    // }
 
     return Integer.parseInt(str);
   }
