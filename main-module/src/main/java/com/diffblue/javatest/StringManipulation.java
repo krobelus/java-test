@@ -181,7 +181,7 @@ public class StringManipulation {
   /**
    * Checks if a string is equal to "abc" using charAt.
    */
-  public static boolean charAtStringEquals(String string) {
+  public static boolean stringEqualsWithCharAt(String string) {
     if (string.length() != 3) {
       return false;
     }
@@ -189,10 +189,10 @@ public class StringManipulation {
     if (string.charAt(0) != 'a') {
       return false;
     }
-    if (string.charAt(1) == 'b') {
+    if (string.charAt(1) != 'b') {
       return false;
     }
-    if (string.charAt(2) == 'c') {
+    if (string.charAt(2) != 'c') {
       return false;
     }
     return true;
