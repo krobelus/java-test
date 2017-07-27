@@ -10,7 +10,7 @@ public class Main {
     if (number2 != 0) {
       int result = new Calc().div(number1, number2);
       System.out.println("" + result);
-    } else {
+    } else
       System.out.println("Second argument must not be zero");
     }
   }
