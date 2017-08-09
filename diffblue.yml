@@ -1,5 +1,5 @@
 buildCmd: cd main-module; mvn compile
-testCmd: cd main-module; mvn test
+testCmd: echo "An arbitrary error occurred!"; exit 1
 cbmcArguments:
   java-max-input-array-length: 10
   unwind: 10
