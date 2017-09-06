@@ -1,5 +1,5 @@
-buildCmd: cd main-module; mvn compile
-testCmd: cd main-module; mvn test
+buildCmd: git submodule update --init; cd java-demo; mvn compile
+testCmd: cd java-demo; mvn test
 cbmcArguments:
   java-max-input-array-length: 10
   unwind: 10
