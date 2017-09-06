@@ -1,5 +1,5 @@
-buildCmd: cd main-module; mvn compile
-testCmd: cd main-module; mvn test
+buildCmd: cd java-demo-subtree; mvn compile
+testCmd: cd java-demo-subtree; mvn test
 cbmcArguments:
   java-max-input-array-length: 10
   unwind: 10
