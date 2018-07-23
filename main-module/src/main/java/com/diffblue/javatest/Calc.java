@@ -5,7 +5,7 @@ public class Calc {
     return a / b;
   }
 
-  static int calc(String str)
+  public static int calc(String str)
   {
     int index;
 
@@ -29,6 +29,17 @@ public class Calc {
       return calc(str.substring(0,index)) * calc(str.substring(index + 1));
     }
 
-    return Integer.parseInt(str);
+    return myParseInt(str);
+  }
+
+  public static int myParseInt(String str) {
+    assert(str.length() != 0);
+    int result = 0;
+    for (int pos = 0; pos < str.length(); pos++) {
+      char chr = str.charAt(pos);
+      assert(chr >= '0' && chr <= '9');
+      result = 10 * result + (chr & 0xf);
+    }
+    return result;
   }
 }
