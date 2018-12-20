@@ -43,7 +43,8 @@ public class TicTacToe {
       if (a[i] == a[3 + i] && a[i] == a[6 + i]) {
         if (a[i] == 1) {
           return 1;
-        } else if (a[i] == 2) {
+        }
+        if (a[i] == 2) {
           return 2;
         }
       }
@@ -51,7 +52,8 @@ public class TicTacToe {
       if (a[3 * i] == a[3 * i + 1] && a[3 * i] == a[3 * i + 2]) {
         if (a[3 * i] == 1) {
           return 1;
-        } else if (a[3 * i] == 2) {
+        }
+        if (a[3 * i] == 2) {
           return 2;
         }
       }
@@ -61,7 +63,8 @@ public class TicTacToe {
     if (a[0] == a[4] && a[0] == a[8]) {
       if (a[0] == 1) {
         return 1;
-      } else if (a[0] == 2) {
+      }
+      if (a[0] == 2) {
         return 2;
       }
     }
@@ -70,7 +73,8 @@ public class TicTacToe {
     if (a[2] == a[4] && a[2] == a[6]) {
       if (a[2] == 1) {
         return 1;
-      } else if (a[2] == 2) {
+      }
+      if (a[2] == 2) {
         return 2;
       }
     }

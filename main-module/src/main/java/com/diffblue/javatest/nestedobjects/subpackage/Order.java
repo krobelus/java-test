@@ -9,9 +9,8 @@ public class Order {
   public boolean hasItem() {
     if (item == null) {
       return false;
-    } else {
-      return true;
     }
+    return true;
   }
 
   /**

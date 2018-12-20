@@ -37,9 +37,8 @@ public class StringManipulation {
     int integer = Integer.parseInt(string);
     if (integer > 10) {
       return 10;
-    } else {
-      return integer;
     }
+    return integer;
   }
 
   /**
@@ -262,11 +261,11 @@ public class StringManipulation {
     int index = string.indexOf("substring");
     if (index == 0) {
       return 0;
-    } else if (index > 0) {
-      return 1;
-    } else {
-      return -1;
     }
+    if (index > 0) {
+      return 1;
+    }
+    return -1;
   }
 
   /**
@@ -300,9 +299,8 @@ public class StringManipulation {
   public static String truncateString(String string) {
     if (string.length() > 10) {
       return string.substring(1, 11);
-    } else {
-      return string;
     }
+    return string;
   }
 
   /**
@@ -340,9 +338,8 @@ public class StringManipulation {
     String trimmed = original.trim();
     if (trimmed.length() == original.length() - 3) {
       return trimmed;
-    } else {
-      return original;
     }
+    return original;
   }
 
   /**
@@ -368,9 +365,8 @@ public class StringManipulation {
 
     if (html.startsWith("</html>", endIndex)) {
       return 1;
-    } else {
-      return 0;
     }
+    return 0;
   }
 
   /**
